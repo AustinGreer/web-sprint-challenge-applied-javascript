@@ -18,10 +18,8 @@ const Header = (title, date, temp) => {
   const headerTitle = document.createElement('h1')
   const headerTemp = document.createElement('span')
 
-  //structure elements
-  header.appendChild(headerDate)
-  header.appendChild(headerTitle)
-  header.appendChild(headerTemp)
+  // structure elements
+  header.append(headerDate, headerTitle, headerTemp)
 
   // add necessary classes, attributes and text content
   header.classList.add('header')
